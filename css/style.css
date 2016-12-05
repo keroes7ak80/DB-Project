@@ -27,13 +27,13 @@ h2
     color:black
 }
 
-.parent
+.parent 
 {
     width: 100%;  
     margin-top: 40px;
     margin-bottom: 40px;
-    height: 2000px;
-    background-color:black
+    height: 400px;
+    background-color:blue;
         
 }
 .img1
@@ -342,10 +342,8 @@ li
 .artistinfo
 {
     width: 50%;
-   //margin: 30px;
+   
     height: 93%;
-    //margin-left: 5px;
-    //background-color:bisque;
     float: left;
     padding: 30px;
 }
@@ -357,7 +355,6 @@ li
 {
     width: 100%;
     height: 15%;
-    //background-color: aqua;
 }
 .us
 {
@@ -377,7 +374,7 @@ li
     width:30%;
     height: 90%;
     float: left;
-    //background-color:brown;
+   
 }
 .upname .button
 {
@@ -388,7 +385,7 @@ li
 {
     width: 100%;
     height: 15%;
-    //background-color: aqua;
+ 
 }
 .passw
 {
@@ -402,14 +399,14 @@ li
 {
     color: crimson;
     margin: 10px;
-    //float: left;
+  
 }
 .uppassw
 {
     width:30%;
     height: 90%;
     float: left;
-    //background-color:brown;
+   
 }
 .uppassw .button
 {
@@ -420,7 +417,6 @@ li
 {
     width: 100%;
     height: 15%;
-    //background-color: aqua;
 }
 .bdate
 {
@@ -434,14 +430,12 @@ li
 {
     color: crimson;
     margin: 10px;
-    //float: left;
 }
 .upbdate
 {
     width:30%;
     height: 90%;
     float: left;
-    //background-color:brown;
 }
 .upbdate .button
 {
@@ -452,7 +446,6 @@ li
 {
     width: 100%;
     height: 60%;
-    //background-color: aqua;
 }
 .briefh
 {
@@ -466,17 +459,29 @@ li
 {
     color: crimson;
     margin: 10px;
-    //float: left;
 }
 .upbriefh
 {
     width:30%;
     height: 90%;
-    float: left;
-    //background-color:brown;
+    float: left; 
 }
 .upbriefh .button
 {
     float: left;
     padding-left: 6px;
+}
+.ArtworkImage
+{
+    width:50%;
+    height:50%;
+    float: left;
+}
+.Artwork-container
+{
+    width: 100%;  
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: blue; 
+   
 }

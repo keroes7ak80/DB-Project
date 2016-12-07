@@ -471,17 +471,3 @@ li
     float: left;
     padding-left: 6px;
 }
-.ArtworkImage
-{
-    width:50%;
-    height:50%;
-    float: left;
-}
-.Artwork-container
-{
-    width: 100%;  
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: blue; 
-   
-}

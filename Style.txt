@@ -1,0 +1,30 @@
+  .ArtworkImage img
+{
+    margin: 30px;
+    margin-right: 5px;
+    width: 40%;
+    height: 17%;
+    background-color: aqua;
+    float: left;
+}
+.Artwork-container
+{
+    width: 100%;  
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+}
+.ArtworkData
+{
+    width: 50%;
+    margin: 30px;
+      height: 17%;
+    margin-left: 5px;
+    background-color:  #2e6da4;
+    padding: 30px;
+    float:Right;
+    display: inline;
+    color: white;
+    font-family: Montserrat,cursive;
+    box-shadow: 10px 10px 10px  grey;
+}

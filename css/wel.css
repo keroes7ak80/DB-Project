@@ -1,0 +1,37 @@
+body{
+	background-image:url(../imiges/welcome.jpg);
+	background-size:1500px 700px;
+	background-repeat:no-repeat
+}
+
+.word{
+	position:absolute;
+	right:50%;
+	top:40%;
+    margin-left:50px;
+	font-size:50px;
+	font-style:oblique;
+	color:white
+}
+
+.join{
+	position:fixed;
+	right:0;
+	margin-left:20px;
+	margin-right:100px;
+	margin-top:10px;
+}
+
+.Signin{
+	position:fixed;
+	right:180px;
+	margin-top:10px;
+}
+
+.slider{
+	position:absolute;
+	top:200%;
+	bottom:100px;
+	right:20%;
+	left:20%;
+}

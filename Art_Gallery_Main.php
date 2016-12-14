@@ -1,45 +1,17 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
         <title>Art Gallery</title>
         <link rel='stylesheet'href='css/bootstrap.css'>
+        <link rel='stylesheet'href='css/style.css'>
         <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style> 
-  .ArtworkImage img
-{
-    margin: 30px;
-    margin-right: 5px;
-    width: 40%;
-    height: 17%;
-    background-color: aqua;
-    float: left;
-}
-.Artwork-container
-{
-    width: 100%;  
-    margin-top: 40px;
-    margin-bottom: 40px;
-   
-}
-.ArtworkData
-{
-    width: 50%;
-    margin: 30px;
-      height: 17%;
-    margin-left: 5px;
-    background-color:  #2e6da4;
-    padding: 30px;
-    float:Right;
-    display: inline;
-    color: white;
-    font-family: Montserrat,cursive;
-    box-shadow: 10px 10px 10px  grey;
-}
+
   </style>
     </head>
     <body>
@@ -97,32 +69,33 @@ $Style="";
 $date="";
 $price="";
 
-$run=$conn->query("SELECT `Title`,`Art_Style`, `Date`,`Price`, `image`,'Status','ID' FROM `artwork`");
+$run=$conn->query("SELECT `ID`,`Title`,`Art_Style`, `Date`,`Price`, `image`,`Status` FROM `artwork`");
 while ($row = mysqli_fetch_array($run))
 {
     
 $title=$row['Title'];
-$Style=$row[1];
-$date=$row[2];
-$price=$row[3];
-$image=$row[4];
-$ArtwordID=$row[6];
+$Style=$row['Art_Style'];
+$date=$row['Date'];
+$price=$row['Price'];
+$image=$row['image'];
+$status=$row['Status'];    
+$ArtwordID=$row['ID'];         
 
-if ($row[5]==0)
+if ($status==0)
 {
 echo 
  " <div class='container-fluid' >
                 
             <div class='Artwork-container' >
             <div class='ArtworkImage' >
-                <img src=''>
+                <img style='border-radius:100%;' src='data:image/jbeg;base64,".base64_encode($image)."'/>
             </div>
             <div class='ArtworkData'>
                 <h3>Title: $title </h3><br>
                 <h3>Style: $Style </h3><br>
                 <h3>Date: $date </h3><br>
                  <h3>Price: $price </h3><br>
-                      <a href='' id=$ArtwordID class='btn btn-info' role='button'>buy</a>
+                      <a href='Buy.php?id=".$ArtwordID."' class='btn btn-info' role='button'>buy</a>
                 </div>
         </div>
     

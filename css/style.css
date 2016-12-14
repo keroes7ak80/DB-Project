@@ -4,6 +4,36 @@
   color: #fff;
   background-color:crimson;
 }
+  .ArtworkImage img
+{
+    margin: 30px;
+    margin-right: 5px;
+    width: 40%;
+    height: 17%;
+    background-color: aqua;
+    float: left;
+}
+.Artwork-container
+{
+    width: 100%;  
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+}
+.ArtworkData
+{
+    width: 50%;
+    margin: 30px;
+      height: 17%;
+    margin-left: 5px;
+    background-color:  #2e6da4;
+    padding: 30px;
+    float:Right;
+    display: inline;
+    color: white;
+    font-family: Montserrat,cursive;
+    box-shadow: 10px 10px 10px  grey;
+}
 .carousel-caption {
   padding-bottom: 300px;
   color: #fff;
@@ -27,13 +57,13 @@ h2
     color:black
 }
 
-.parent 
+.parent
 {
     width: 100%;  
     margin-top: 40px;
     margin-bottom: 40px;
-    height: 400px;
-    background-color:blue;
+    height: 2000px;
+    background-color:black
         
 }
 .img1
@@ -43,6 +73,7 @@ h2
     width: 40%;
     height: 17%;
     background-color: aqua;
+    border: 5px solid white;
     float: left;
     
 }
@@ -56,6 +87,30 @@ h2
     padding: 30px;
     float:left;
     display: inline;
+}
+.par1 h2
+{
+    color:crimson;
+    display: inline;
+    
+}
+.dropdown-menu
+{
+    height: 200px;
+   overflow: auto;    
+}
+.error
+{
+    color: red;
+    font-family: cursive;
+    display: inline;
+}
+
+.par1 h3
+{
+    color:bisque;
+    display: inline;
+    font-family: cursive;
 }
 .img1 img
 {
@@ -199,7 +254,7 @@ h2
 .workshop
 {
     width: 100%;
-    height:950px;
+    height:967px;
     background-image: url("../imiges/v4eozj7g1gw-neven-krcmarek%20(1)%20-%20Copy.jpg");
     background-repeat: no-repeat;
         
@@ -209,15 +264,24 @@ h2
     width: 30%;
     height: 300px;
     float: right;
-    margin-top: 398px;
+    margin-top: 368px;
     margin-right: 400px;
     padding: 20px;
+}
+.winfo button
+{
+    display: inline;
+}
+.form-group
+{
+    display: inline;
 }
 .winfo h1
 {
     text-align: center;
     font-family: 'Pacifico', cursive;
-    color:dodgerblue
+    color:dodgerblue;
+    margin-top: 27px;
     
 }
 .winfo label
@@ -253,8 +317,8 @@ h2
     width: 40%;
     height: 410px;
     float: left;
-    margin:20px 10px 60px 60px ;
-    background-image: url("../imiges/1_cmofspfso-joanna-kosinska.jpg");
+    margin:20px 10px 40px 80px ;
+    background-image: url("../imiges/1481529122_color_pailet_with_brush.png");
     border: 5px solid black;
     background-clip:content-box;
     background-repeat: no-repeat;
@@ -265,6 +329,20 @@ h2
     height: 280px;
     margin-left: 150px;
     margin-top: 120px;
+}
+.myworkshop h1{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.wshop h2
+{
+    display: inline;
+    color:black;
+}
+.wshop h4
+{
+    display: inline;
+    color:navy;
 }
 .button
 {
@@ -278,7 +356,7 @@ h2
 .contest1
 {
     width: 100%;
-    height: 1600px;
+    height: 700px;
     background-color: black;
     padding:20px; 
 }
@@ -305,12 +383,26 @@ h2
     border: 5px solid white;
     margin-left: 30px;
     margin-top: 20px;
-    background-image: url("../imiges/67l7k6dlzva-annie-spratt.jpg")
+    margin-bottom: 20px;
+    
+}
+.imgcon img
+{
+    width: 100%;
+    height: 100%;
 }
 .con1info h2
 {
-    color: crimson;
+    color:crimson;
+    display: inline;
 }
+.con1info h3
+{
+    color:bisque;
+    display: inline;
+    font-family:  cursive;
+}
+
 .contest1 h1
 {
     color: aliceblue;
@@ -328,6 +420,10 @@ li
     background-color:black
         
 }
+.parent h1
+{
+    color: white;
+}
 .im
 {
     margin: 30px;
@@ -342,8 +438,10 @@ li
 .artistinfo
 {
     width: 50%;
-   
+   //margin: 30px;
     height: 93%;
+    //margin-left: 5px;
+    //background-color:bisque;
     float: left;
     padding: 30px;
 }
@@ -355,6 +453,7 @@ li
 {
     width: 100%;
     height: 15%;
+    //background-color: aqua;
 }
 .us
 {
@@ -374,7 +473,7 @@ li
     width:30%;
     height: 90%;
     float: left;
-   
+    //background-color:brown;
 }
 .upname .button
 {
@@ -385,7 +484,7 @@ li
 {
     width: 100%;
     height: 15%;
- 
+    //background-color: aqua;
 }
 .passw
 {
@@ -399,14 +498,14 @@ li
 {
     color: crimson;
     margin: 10px;
-  
+    //float: left;
 }
 .uppassw
 {
     width:30%;
     height: 90%;
     float: left;
-   
+    //background-color:brown;
 }
 .uppassw .button
 {
@@ -417,6 +516,7 @@ li
 {
     width: 100%;
     height: 15%;
+    //background-color: aqua;
 }
 .bdate
 {
@@ -430,12 +530,14 @@ li
 {
     color: crimson;
     margin: 10px;
+    //float: left;
 }
 .upbdate
 {
     width:30%;
     height: 90%;
     float: left;
+    //background-color:brown;
 }
 .upbdate .button
 {
@@ -446,6 +548,7 @@ li
 {
     width: 100%;
     height: 60%;
+    //background-color: aqua;
 }
 .briefh
 {
@@ -459,12 +562,14 @@ li
 {
     color: crimson;
     margin: 10px;
+    //float: left;
 }
 .upbriefh
 {
     width:30%;
     height: 90%;
-    float: left; 
+    float: left;
+    //background-color:brown;
 }
 .upbriefh .button
 {
